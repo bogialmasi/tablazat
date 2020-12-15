@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ez a weboldal reszponzivitását állítja be telóra tabletre stb.-->
+    <title>TÁBLÁZAT</title>
+    <link rel="icon" href="faviconnyuszika.jpg" type="image/jpg" sizes="16x16"><!--type ugyanaz mint a fájlkiterjesztás, méret mindig legyen 16x16-->
+    <link rel="stylesheet" href="stilus.css"><!--hozzá való css hivatkozás-->
+    <script src=""></script><!--itt lesz egy js fájl-->
+</head>
+<body>
+    <table>
+        <caption class="tablazatcim">
+            Táblázatom
+        </caption>
+        <tr>
+            <th>1. Oszlop</th>
+            <th>2. Oszlop</th>
+            <th>3. Oszlop</th>
+        </tr>
+        <tr><!--táblázat sorai TABLE ROW-->
+            <td class="cella">1.sor 1.elem</td><!--táblázat cellái TABLE DATA-->
+            <td>1.sor 2.elem</td>
+            <td  class="cella">1.sor 3.elem</td>
+        </tr>
+        <tr><!--táblázat sorai-->
+            <td>2.sor 1.elem</td><!--táblázat cellái-->
+            <td class="cella">2.sor 2.elem</td>
+            <td>2.sor 3.elem</td>
+        </tr>
+        <tr><!--táblázat sorai-->
+            <td class="cella">3.sor 1.elem</td><!--táblázat cellái-->
+            <td>3.sor 2.elem</td>
+            <td class="cella">3.sor 3.elem</td>
+        </tr>
+    </table>
+<table id="t2">
+    <caption class="tablazatcim">
+        Táblázatom
+    </caption>
+    <tr>
+        <th>1. Oszlop</th>
+        <th>2. Oszlop</th>
+        <th>3. Oszlop</th>
+    </tr>
+    <tr><!--táblázat sorai TABLE ROW-->
+        <td class="cella">1.sor 1.elem</td><!--táblázat cellái TABLE DATA-->
+        <td colspan="2">1.sor 2.elem + 3.elem</td><!--COLSPAN összevonja a kövi cellával egy sorban-->
+    </tr>
+    <tr><!--táblázat sorai-->
+        <td>2.sor 1.elem</td><!--táblázat cellái-->
+        <td class="cella" rowspan="2">2.sor 2.elem + 3.sor 2.elem</td><!--ROWSPAN összevonja az alatta lévő cellával-->
+        <td>2.sor 3.elem</td>
+    </tr>
+    <tr><!--táblázat sorai-->
+        <td class="cella">3.sor 1.elem</td><!--táblázat cellái-->
+        <td class="cella">3.sor 3.elem</td>
+    </tr>
+</table>
+</body>
+</html>
